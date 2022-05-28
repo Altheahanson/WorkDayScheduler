@@ -19,10 +19,11 @@ $(document).ready(function () {
     function timeSetter() {
         //get current number of hours.
         var currentTime = moment().hour();
+        
 
         // loop over time blocks to remove the hour from id
         $(".time-block").each(function () {
-            var blockTime = parseInt($(this).attr("id").split("hour")[1]);
+            var blockTime = parseInt($(this).attr("id").split("-")[1]);
             console.log([1]);
 
             // To check the time and add the classes for background indicators
